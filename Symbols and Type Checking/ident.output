@@ -1,0 +1,21 @@
+astree.o:
+
+lyutils.o:
+
+auxlib.o:
+
+stringset.o:
+
+symtable.o:
+
+main.o:
+
+yylex.o:
+     $Id: scanner.l,v 1.2 2013-10-28 22:54:59-07 - - $
+     $Compiled: scanner.l May 26 2015 23:45:40 $
+
+yyparse.o:
+
+oc:
+     $Id: scanner.l,v 1.2 2013-10-28 22:54:59-07 - - $
+     $Compiled: scanner.l May 26 2015 23:45:40 $

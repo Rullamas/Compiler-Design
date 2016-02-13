@@ -1,0 +1,19 @@
+__assert_fail (2, 30, 5){1} void(string,string,int)
+   expr (2, 30, 27){2} string
+   file (2, 30, 40){2} string
+   line (2, 30, 50){2} int
+endl (2, 37, 5){1} void()
+exit (2, 42, 5){1} void(int)
+   status (2, 42, 15){12} int
+getargv (2, 41, 9){1} string[]()
+getc (2, 38, 4){1} int()
+getln (2, 40, 7){1} string()
+getw (2, 39, 7){1} string()
+putb (2, 33, 5){1} void(bool)
+   b (2, 33, 16){3} bool
+putc (2, 34, 5){1} void(char)
+   c (2, 34, 16){4} char
+puti (2, 35, 5){1} void(int)
+   i (2, 35, 15){5} int
+puts (2, 36, 5){1} void(string)
+   s (2, 36, 18){6} string

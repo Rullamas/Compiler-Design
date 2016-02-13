@@ -1,0 +1,112 @@
+program
+   function
+      decl
+         type
+            basetype
+               TOK_STRING (string)
+         TOK_IDENT (expr)
+      decl
+         type
+            basetype
+               TOK_STRING (string)
+         TOK_IDENT (file)
+      decl
+         type
+            basetype
+               TOK_INT (int)
+         TOK_IDENT (line)
+      type
+         basetype
+            TOK_VOID (void)
+      TOK_IDENT (__assert_fail)
+      block
+   function
+      decl
+         type
+            basetype
+               TOK_BOOL (bool)
+         TOK_IDENT (b)
+      type
+         basetype
+            TOK_VOID (void)
+      TOK_IDENT (putb)
+      block
+   function
+      decl
+         type
+            basetype
+               TOK_CHAR (char)
+         TOK_IDENT (c)
+      type
+         basetype
+            TOK_VOID (void)
+      TOK_IDENT (putc)
+      block
+   function
+      decl
+         type
+            basetype
+               TOK_INT (int)
+         TOK_IDENT (i)
+      type
+         basetype
+            TOK_VOID (void)
+      TOK_IDENT (puti)
+      block
+   function
+      decl
+         type
+            basetype
+               TOK_STRING (string)
+         TOK_IDENT (s)
+      type
+         basetype
+            TOK_VOID (void)
+      TOK_IDENT (puts)
+      block
+   function
+      type
+         basetype
+            TOK_VOID (void)
+      TOK_IDENT (endl)
+      block
+   function
+      type
+         basetype
+            TOK_INT (int)
+      TOK_IDENT (getc)
+      block
+   function
+      type
+         basetype
+            TOK_STRING (string)
+      TOK_IDENT (getw)
+      block
+   function
+      type
+         basetype
+            TOK_STRING (string)
+      TOK_IDENT (getln)
+      block
+   function
+      type
+         basetype
+            TOK_STRING (string)
+         TOK_ARRAY ([])
+      TOK_IDENT (getargv)
+      block
+   function
+      decl
+         type
+            basetype
+               TOK_INT (int)
+         TOK_IDENT (status)
+      type
+         basetype
+            TOK_VOID (void)
+      TOK_IDENT (exit)
+      block
+   call
+      constant
+         TOK_STRINGCON ("Hello, world!\n")
+      TOK_IDENT (puts)

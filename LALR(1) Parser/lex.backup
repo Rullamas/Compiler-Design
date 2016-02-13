@@ -1,0 +1,25 @@
+State #44 is non-accepting -
+ associated rule line numbers:
+	65
+ out-transitions: [ \000-\t  \v-\377 ]
+ jam-transitions: EOF [ \n ]
+
+State #46 is non-accepting -
+ associated rule line numbers:
+	65
+ out-transitions: [ "  '  0  \  n  t ]
+ jam-transitions: EOF [ \000-!  #-&  (-/  1-[  ]-m  o-s  u-\377 ]
+
+State #48 is non-accepting -
+ associated rule line numbers:
+	64
+ out-transitions: [ ' ]
+ jam-transitions: EOF [ \000-&  (-\377 ]
+
+State #49 is non-accepting -
+ associated rule line numbers:
+	64
+ out-transitions: [ "  '  0  \  n  t ]
+ jam-transitions: EOF [ \000-!  #-&  (-/  1-[  ]-m  o-s  u-\377 ]
+
+Compressed tables always back up.

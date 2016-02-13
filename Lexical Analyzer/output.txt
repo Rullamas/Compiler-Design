@@ -1,0 +1,469 @@
+g++ -g -O0 -Wall -Wextra -std=gnu++11 -c yylex.cpp
+yylex.cpp: In function ‘int yylex()’:
+scanner.l:13:42: error: ‘scanner_userinit’ was not declared in this scope
+ #define YY_USER_INIT  {scanner_userinit (); }
+                                          ^
+yylex.cpp:892:3: note: in expansion of macro ‘YY_USER_INIT’
+   YY_USER_INIT;
+   ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+yylex.cpp:1000:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ YY_RULE_SETUP
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:43:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "["             { return yylval_token ('['); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:44:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "]"             { return yylval_token (']'); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:45:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "{"             { return yylval_token ('{'); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:46:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "}"             { return yylval_token ('}'); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:47:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ ";"             { return yylval_token (';'); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:48:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ ","             { return yylval_token (','); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:49:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "."             { return yylval_token ('.'); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:50:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "="             { return yylval_token ('='); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:51:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "=="            { return yylval_token (TOK_EQ); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:52:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "!="            { return yylval_token (TOK_NE); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:53:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "<"             { return yylval_token (TOK_LT); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:54:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "<="            { return yylval_token (TOK_LE); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:55:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ ">"             { return yylval_token (TOK_GT); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:56:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ ">="            { return yylval_token (TOK_GE); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:57:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "+"             { return yylval_token ('+'); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:58:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "-"             { return yylval_token ('-'); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:59:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "*"             { return yylval_token ('*'); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:60:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "/"             { return yylval_token ('/'); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:61:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "%"             { return yylval_token ('%'); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:62:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "!"             { return yylval_token ('!'); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:63:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ {TOK_IDENT}  { return yylval_token (TOK_IDENT); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:64:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ {TOK_CHARCON} { return yylval_token (TOK_CHARCON); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:65:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ {TOK_STRINGCON} { return yylval_token (TOK_STRINGCON); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:66:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ {NUMBER}        { return yylval_token (NUMBER); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:67:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ 
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:68:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ 
+ ^
+scanner.l:66:24: error: ‘NUMBER’ was not declared in this scope
+ {NUMBER}        { return yylval_token (NUMBER); }
+                        ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:69:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "void"          { return yylval_token (TOK_VOID); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:72:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "int"           { return yylval_token (TOK_INT); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:73:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "string"        { return yylval_token (TOK_STRING); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:74:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "struct"        { return yylval_token (TOK_STRUCT); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:75:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "if"            { return yylval_token (TOK_IF); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:76:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "else"          { return yylval_token (TOK_ELSE); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:77:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "while"         { return yylval_token (TOK_WHILE); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:78:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "return"        { return yylval_token (TOK_RETURN); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:79:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "false"         { return yylval_token (TOK_FALSE); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:80:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "true"          { return yylval_token (TOK_TRUE); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:81:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "null"          { return yylval_token (TOK_NULL); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:82:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "ord"           { return yylval_token (TOK_ORD); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:83:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "chr"           { return yylval_token (TOK_CHR); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:84:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "new"           { return yylval_token (TOK_NEW); }
+ ^
+scanner.l:82:24: error: ‘TOK_ORD’ was not declared in this scope
+ "ord"           { return yylval_token (TOK_ORD); }
+                        ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:85:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ 
+ ^
+scanner.l:83:24: error: ‘TOK_CHR’ was not declared in this scope
+ "chr"           { return yylval_token (TOK_CHR); }
+                        ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:86:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ "#".*           { scanner_include(); }
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:87:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ [ \t]+          { IGNORE (white space) }
+ ^
+scanner.l:86:19: error: ‘scanner_include’ was not declared in this scope
+ "#".*           { scanner_include(); }
+                   ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:89:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ 
+ ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:91:1: note: in expansion of macro ‘YY_RULE_SETUP’
+                   return yylval_token (TOK_INT); }
+ ^
+scanner.l:88:19: error: ‘scanner_newline’ was not declared in this scope
+ \n              { scanner_newline(); }
+                   ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:91:1: note: in expansion of macro ‘YY_RULE_SETUP’
+                   return yylval_token (TOK_INT); }
+ ^
+scanner.l:90:27: error: ‘scanner_badtoken’ was not declared in this scope
+ {NOTNUMBER}     { scanner_badtoken (yytext);
+                           ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:94:1: note: in expansion of macro ‘YY_RULE_SETUP’
+ 
+ ^
+scanner.l:93:27: error: ‘scanner_badchar’ was not declared in this scope
+ .               { scanner_badchar (*yytext); }
+                           ^
+scanner.l:12:47: error: ‘scanner_useraction’ was not declared in this scope
+ #define YY_USER_ACTION  { scanner_useraction (); }
+                                               ^
+yylex.cpp:869:2: note: in expansion of macro ‘YY_USER_ACTION’
+  YY_USER_ACTION
+  ^
+scanner.l:96:1: note: in expansion of macro ‘YY_RULE_SETUP’
+make: *** [yylex.o] Error 1
